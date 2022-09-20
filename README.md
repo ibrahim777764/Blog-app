@@ -1,24 +1,36 @@
-# README
+# Blog-app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is a an Blog app build using Ruby on Rails Where you can sign up, create your own posts and comment and like other users posts
+## Built With
 
-Things you may want to cover:
+- ![](https://img.shields.io/badge/Github-blueviolet)
+- ![](https://img.shields.io/badge/Ruby-red)
+- ![](https://img.shields.io/badge/Ruby*on*Rails-red)
 
-* Ruby version
+## Authors
 
-* System dependencies
+👤 **ibrahim naseer**
 
-* Configuration
+I am an aspiring web developer from pakistan.
+- GitHub: [@ibrahimgit](https://github.com/ibrahim777764)
+- Twitter: [Ibrahimtwit](https://twitter.com/Ibrahim66650696)
+- LinkedIn: [@ibrahimlin](https://www.linkedin.com/in/ibrahim-naseer-215667225/)
+## Setup
 
-* Database creation
+If you wish to run the project locally, please do the following:
 
-* Database initialization
+- Clone the repository to your local machine. - **`git@github.com:ibrahim777764/Blog-app.git`** - **`cd Blog-App`**
 
-* How to run the test suite
+## 🤝 Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
+Contributions, issues, and feature requests are welcome!
 
-* Deployment instructions
+Feel free to check the [issues page](https://github.com/ibrahim777764/Blog-app/issues).
 
-* ...
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
