@@ -7,6 +7,12 @@
 - ![](https://img.shields.io/badge/Ruby-red)
 - ![](https://img.shields.io/badge/Ruby*on*Rails-red)
 
+## Setup
+
+If you wish to run the project locally, please do the following:
+
+- Clone the repository to your local machine. - **`git@github.com:ibrahim777764/Blog-app.git`** - **`cd Blog-App`**
+
 ## Authors
 
 👤 **ibrahim naseer**
@@ -15,11 +21,6 @@ I am an aspiring web developer from pakistan.
 - GitHub: [@ibrahimgit](https://github.com/ibrahim777764)
 - Twitter: [Ibrahimtwit](https://twitter.com/Ibrahim66650696)
 - LinkedIn: [@ibrahimlin](https://www.linkedin.com/in/ibrahim-naseer-215667225/)
-## Setup
-
-If you wish to run the project locally, please do the following:
-
-- Clone the repository to your local machine. - **`git@github.com:ibrahim777764/Blog-app.git`** - **`cd Blog-App`**
 
 ## 🤝 Contributing
 
