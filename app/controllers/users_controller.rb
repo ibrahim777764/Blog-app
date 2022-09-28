@@ -1,5 +1,10 @@
-class UsersController < ApplicationRecord
-  def index; end
+class UsersController < ApplicationController
+  def index
+  @users = User.all
+  end
 
-  def shows; end
+  def show
+    @user = User.find(params[:id])
+    @post = @users.show_recent_posts
+  end
 end
