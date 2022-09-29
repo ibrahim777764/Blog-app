@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe 'Posts', type: :request do
+RSpec.describe PostsController, type: :request do
   describe 'GET #index' do
-    before(:example) { get 'users/posts' }
+    before(:example) { get '/users/1/posts' }
 
     it 'has the correct response status' do
       expect(response).to have_http_status(200)
@@ -11,7 +11,7 @@ RSpec.describe 'Posts', type: :request do
       expect(response).to render_template(:index)
     end
 
-    it 'body includes correct placeholder text' do
+    it 'the response body includes correct placeholder text' do
       expect(response.body).to include('Here is a list of posts for a given user')
     end
   end
