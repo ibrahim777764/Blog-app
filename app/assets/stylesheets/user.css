@@ -1,14 +1,14 @@
-.user{
-    background-color: rgb(224, 168, 168);
-    font-size: 50px;
+.user {
+  background-color: rgb(224, 168, 168);
+  font-size: 50px;
 }
-.img{
+.img {
   width: 15%;
   border-radius: 100px;
 }
-.row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
