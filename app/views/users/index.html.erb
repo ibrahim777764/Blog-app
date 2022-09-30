@@ -1,0 +1,8 @@
+<h1 class="sahar">Hello Ibo</h1>
+<div>
+  <% @users.each do |user| %>
+    <%= link_to user do %>
+    <%= render partial: 'users/user_card', locals: { user: user } %>
+    <% end %>
+  <% end %>
+</div>

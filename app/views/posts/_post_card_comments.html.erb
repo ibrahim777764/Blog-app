@@ -1,0 +1,17 @@
+<%= render partial: 'posts/post_card', locals: { post: post } %>
+<% if comments.any? %>
+  <div>
+    <% comments.each do |comment| %>
+      <div>
+        <h3><%= comment.user.name %>: <span><%= comment.text %></span></h3>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+<% if comments.empty? %>
+  <div>
+    <div>
+      <h3>There no comments for this post!</h3>
+    </div>
+  </div>
+<% end %>

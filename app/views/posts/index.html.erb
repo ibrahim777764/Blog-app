@@ -1,0 +1,12 @@
+<% if @posts.any? %>
+<%= render partial: 'users/user_card', locals: { user: @posts.first.user } %>
+<% @posts.each do |post| %>
+  <%= render partial: 'post_card_comments', locals: { post: post, comments: post.recent_5_comments} %>
+<% end %>
+<div>
+<button>Pagination</button>
+</div>
+<% end %>
+<% if @posts.empty? %>
+<h1>There are no posts to show for this user</h1>
+<% end %>

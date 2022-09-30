@@ -1,0 +1,23 @@
+<div>
+  <div>
+  <h2>Post #<%= post.id%> by <%= post.user.name %></h2>
+  <h3>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></h3>
+  </div>
+  <p><%= post.text %></p>
+</div>
+<% if comments.any? %>
+  <div>
+    <% comments.each do |comment| %>
+      <div>
+        <h3><%= comment.user.name %>: <span><%= comment.text %></span></h3>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+<% if comments.empty? %>
+  <div>
+    <div>
+      <h3>There no comments for this post!</h3>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,7 @@
+<div>
+<%= link_to user_post_path(post.user, post) do %>
+    <h2>Post #<%= post.id%> <%= post.title %></h2>
+<% end %>
+<p><%= post.text.length > 120 ? post.text.first(100) + '...' : post.text %></p>
+<h3>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></h3>
+</div>
