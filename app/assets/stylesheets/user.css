@@ -2,10 +2,12 @@
   background-color: rgb(224, 168, 168);
   font-size: 50px;
 }
+
 .img {
   width: 15%;
   border-radius: 100px;
 }
+
 .row {
   display: flex;
   flex-direction: row;
