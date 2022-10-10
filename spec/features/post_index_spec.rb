@@ -75,5 +75,14 @@ RSpec.describe 'Post Index', type: :feature do
       click_link 'Second post'
       expect(page).to have_current_path(user_post_path(@user1, @post2))
     end
+
+    it 'shows the number of posts each user has written' do
+      expect(page).to have_content('0')
+    end
+
+    it 'When I click on a post, it redirects me to that post\'s show page' do
+      click_link @first_post.title
+      expect(page).to have_current_path user_post_path(@first_user, @first_post)
+    end
   end
 end

@@ -43,6 +43,28 @@ RSpec.describe 'Post Show', type: :feature do
         expect(page).to have_content('First post')
         expect(page).to have_content('This is my first post')
       end
+      it 'When I click on a post, it redirects me to that post\'s show page' do
+        click_link @first_post.title
+        expect(page).to have_current_path user_post_path(@first_user, @first_post)
+      end
+      it 'shows how many comments it has' do
+        expect(@first_post.comments_counter).to eq(4)
+      end
+      it 'shows how many likes it has' do
+        expect(@first_post.likes_counter).to eq(0)
+      end
+      it 'showd the username of each commentor' do
+        expect(page).to have_content @first_comment.user.name
+        expect(page).to have_content @second_comment.user.name
+        expect(page).to have_content @third_comment.user.name
+        expect(page).to have_content @fourth_comment.user.name
+      end
+      it 'shows the comment each commentor left' do
+        expect(page).to have_content @first_comment.text
+        expect(page).to have_content @second_comment.text
+        expect(page).to have_content @third_comment.text
+        expect(page).to have_content @fourth_comment.text
+      end
     end
   end
 end
